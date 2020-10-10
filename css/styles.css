@@ -1,8 +1,8 @@
 @import url("./bootstrap.css");
 @import url("./bootstrap.min.css");
 
-.start{
-    background-image: url("../images/chef.png");
+.start { 
+    background-image: url("../images/logo.jpeg");
     text-align: center;
-    background-color: aqua;
+    color: purple;
 }

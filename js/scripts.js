@@ -140,7 +140,7 @@ $(function () {
 
 
         $('#ZZAry').text(" ");
-        $("#ZZAry").append("<br>" + "Pizza Size : " + getZZAsizePrice
+        $("#ZZAry").append("<br>" + "<p> Pizza Size :  " + getZZAsizePrice
         + "<br>" + " Pizza Crust :     " + getZZACrustPrice
         + "<br>" + "Choosen Toppings :     " + toppings
         + "<br>" + " Number of Pizzas :    " + getZZAnumber

@@ -6,3 +6,45 @@
     text-align: center;
     color: purple;
 }
+
+.ZZAform{
+    background-color: rgba(0, 0, 0, 1);
+    color: tomato;
+    width: 50%;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*
+.chef {
+    background-image: url("../images/chef.png");
+    padding: 25px;
+    background-repeat: round;
+    width:300px;
+    height:300px;
+    text-align: right;
+}*/
+
+.descri {
+    text-align: left;
+}
+
+
+.one {
+    font-family: 'Shadows Into Light', cursive;
+    color: yellowgreen;
+}
+
+.two {
+    font-family: 'Amatic SC', cursive;
+    color: tomato;
+}
+
+.three {
+    font-family: 'Architects Daughter', cursive;
+    color: orange;
+}
+
+.text-center descri {
+    font-family: 'Glegoo', serif;
+}

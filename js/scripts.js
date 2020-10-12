@@ -136,5 +136,27 @@ $(function () {
         $('#sum').slideDown();
         $('.deliver').show(1000);
         $('.delivernot').show(1000);
-    })
+
+        $('#sum').text(" ");
+        $("#sum").append("<br>" + "ZZAsize :   " + "<br>"
+        + "ZZAcrust :     " + "<br>" 
+        + "toppings :     "+ "<br>" 
+        + "ZZAnbr :    " + "<br>" 
+        + "calculateTotalPrice :  "
+        + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+    });
+
+    /* */
+    function Delivery(location,) {
+        this.location = location;
+    }
+    function view(){
+        dPrice = calculateTotalPrice * 0.2;
+        return this.location + " for the delivery price of " + dPrice;
+    }
+    Delivery.prototype.view = view;
+    var deliver1 = prompt("please enter your location","");
+    document.getElementById("deli").innerHTML = alert(deliver1.view);
+    /* */
+    
 });

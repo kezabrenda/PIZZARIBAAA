@@ -1,6 +1,17 @@
 @import url("./bootstrap.css");
 @import url("./bootstrap.min.css");
+@import url('<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">');
 
+.navbar {
+    background-color: black;
+    color: brown;
+}
+
+#para{
+    font-family: 'Courgette', cursive;
+    font-size: medium;
+    text-align: center;
+}
 .start { 
     background-image: url("../images/logo.jpeg");
     text-align: center;
@@ -68,3 +79,27 @@
 }
 
 /**/
+.social-list__link:hover {
+    opacity: .7;
+    color: var(--clr-accent);
+}
+
+.footer__link:hover {
+    text-decoration: wavy;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 2;
+}
+
+.social-list__item {
+    margin: 1em;
+}
+
+.social-list__link {
+    padding: .5em;
+}

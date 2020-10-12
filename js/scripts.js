@@ -132,18 +132,25 @@ $(function () {
 
         /* */
         $('.ZZAsummary').slideDown(2000);
-        $('.info').slideUp();
+        $('.info').slideDown();
         $('#sum').slideDown();
-        $('.deliver').show(1000);
-        $('.delivernot').show(1000);
+        $('.deliver').show(2000);
+        $('.pickUp').show(2000);
+
+        let list = (sz, ct, tg, nb, total) => {
+            return {sz, ct, tg, nb, total};
+        };
+
+        let newList = list(ZZAsize, ZZAcrust, ZZAtoppings, ZZAnbr, totalPrice);
+        console.log(newList);
 
         $('#sum').text(" ");
-        $("#sum").append("<br>" + "ZZAsize :   " + "<br>"
-        + "ZZAcrust :     " + "<br>" 
-        + "toppings :     "+ "<br>" 
-        + "ZZAnbr :    " + "<br>" 
-        + "calculateTotalPrice :  "
-        + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+        $("#sum").append("<br>" + "Size :   "
+            + newOrder.sz + "<br>" + "Crust :     "
+            + newOrder.ct + "<br>" + "Toppings :     "
+            + newOrder.tg + "<br>" + " Number of pizzas :    "
+            + newOrder.nb + "<br>" + "Total Price :  "
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
     /* */
@@ -158,5 +165,5 @@ $(function () {
     var deliver1 = prompt("please enter your location","");
     document.getElementById("deli").innerHTML = alert(deliver1.view);
     /* */
-    
+
 });

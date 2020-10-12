@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzarriba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -14,36 +15,33 @@
     <div class="container">
         <br> <br> 
         <div class="start">
+            <div class="navbar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#start">!PIZZARRIBA!</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#bien">Bienvenida</a>
+                            </li>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#order">Order</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+                      
                   </ul>
                 </div>
-              </nav>
+                </nav>
+            </div>
+            <a href="#bien" class="bienbtn">
+                <button class="btn bg-info floater  infinite delay-2s">Get Started</button>
+            </a>
 
             <br> <br> <br><br><br><br> 
             
@@ -51,7 +49,7 @@
 
         <br> <br> <br><br><br><br><br><br>
        
-        <div class="descri">
+        <div class="descri" id="#bien">
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-6">
@@ -63,17 +61,18 @@
                             <span class="three">WELCOME</span> <span class="one"> TO</span> <span class="two"> ALL!</span>
                         </h1>
                         <br>
-                        <p class="text-center descri">For That Comfort Food And Homey Feel,</p>
+                        <p class="text-center descri">For That Comfort And Homey Feel,</p>
                         <p class="text-center descri">We Are Just A Call Away!</p>
-                        <a href="#menus">
-                            <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br><br>
 
+        <div class="rriba"><br><br><br><br><br></div>
         <br> <br> <br><br><br><br> <br> <br>
+        <div class="menus" id="order">
+            <h1 class="OHH">ORDER HERE!</h1>
+            <br><br>
             <form class="ZZAform">
                 <div class="form-group">
                   <label for="ZZAsize">Choose the size of your pizza</label>
@@ -160,7 +159,10 @@
 
                 <button type="submit" class="ZZAcheckout" id="checkout">checkout</button>
 
-              </form>
+            </form>
+        </div>
+
+              <!---->
 
         </div>
     </div>

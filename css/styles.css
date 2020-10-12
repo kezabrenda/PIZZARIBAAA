@@ -4,31 +4,24 @@
 .start { 
     background-image: url("../images/logo.jpeg");
     text-align: center;
-    color: purple;
+    background-size: 200px;
+    background-position: center center;
+    background-repeat: space;
+    width: 100%;
 }
 
-.ZZAform{
-    background-color: rgba(0, 0, 0, 1);
-    color: tomato;
-    width: 50%;
-    display: inline-block;
-    margin-left: 25%;
-    margin-right: 25%;
+.bienbtn {
+    margin-bottom: 100%;
 }
-/*
-.chef {
-    background-image: url("../images/chef.png");
-    padding: 25px;
-    background-repeat: round;
-    width:300px;
-    height:300px;
-    text-align: right;
-}*/
 
+.OHH {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+/**/
 .descri {
     text-align: left;
 }
-
 
 .one {
     font-family: 'Shadows Into Light', cursive;
@@ -48,3 +41,30 @@
 .text-center descri {
     font-family: 'Glegoo', serif;
 }
+
+.rriba {
+    background-image: url("../images/ZZAsize.jpg");
+    background-repeat: no-repeat;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* Form */
+.ZZAform{
+    background-color: rgba(0, 0, 0, 1);
+    color: wheat;
+    width: 50%;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.ZZAcheckout {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: teal;
+}
+
+/**/

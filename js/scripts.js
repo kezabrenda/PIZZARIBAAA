@@ -3,6 +3,7 @@ $(function () {
     $('.info').hide();
     
     $("#checkout").click(function(){
+
         function getZZAsizePrice() {
             var choosenSize = document.getElementById("ZZAsize").value;
             return parseInt(choosenSize);
@@ -132,25 +133,18 @@ $(function () {
 
         /* */
         $('.ZZAsummary').slideDown(2000);
-        $('.info').slideDown();
-        $('#sum').slideDown();
+        $('.info').slideDown(2000);
+        $('#ZZAry').slideDown();
         $('.deliver').show(2000);
         $('.pickUp').show(2000);
 
-        let list = (sz, ct, tg, nb, total) => {
-            return {sz, ct, tg, nb, total};
-        };
-
-        let newList = list(ZZAsize, ZZAcrust, ZZAtoppings, ZZAnbr, totalPrice);
-        console.log(newList);
-
-        $('#sum').text(" ");
-        $("#sum").append("<br>" + "Size :   "
-            + newOrder.sz + "<br>" + "Crust :     "
-            + newOrder.ct + "<br>" + "Toppings :     "
-            + newOrder.tg + "<br>" + " Number of pizzas :    "
-            + newOrder.nb + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+        $('#ZZAry').text(" ");
+        $("#ZZAry").append("<br>" + " Pizza Size :   " + getZZAsizePrice
+        + "<br>" + " Pizza Crust :     " + getZZACrustPrice
+        + "<br>" + "Choosen Toppings :     " + toppings
+        + "<br>" + " Number of Pizzas :    " + getZZAnumber
+        + "<br>" + "Total Price :  " + calculateTotalPrice
+        + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
     /* */

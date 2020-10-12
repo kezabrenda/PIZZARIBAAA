@@ -138,13 +138,45 @@ $(function () {
         $('.deliver').show(2000);
         $('.pickUp').show(2000);
 
+
+
+        function createListItem(text) {
+            var li = document.createElement('ZZAry');
+            li.textContent = text;
+            return li;
+        }
+
+        function appendChildren (parent,children) {
+            children.forEach(function(child) {
+                parent.appendChild(child);
+            });
+        }
+
+        var myList = document.getElementById('ZZAry');
+        var items = [
+            createListItem('Pizza Size : ' + getZZAsizePrice),
+            createListItem(''),
+            createListItem(''),
+            createListItem(''),
+            createListItem(''),
+            createListItem('')
+        ];
+
+        appendChildren(myList,items);
+
+      /*  items.forEach(function (li) {
+            myList.appendChild(li);
+        });
+
         $('#ZZAry').text(" ");
-        $("#ZZAry").append("<br>" + " Pizza Size :   " + getZZAsizePrice
+        $("#ZZAry").append("<br>" + "Pizza Size : " + getZZAsizePrice
         + "<br>" + " Pizza Crust :     " + getZZACrustPrice
         + "<br>" + "Choosen Toppings :     " + toppings
         + "<br>" + " Number of Pizzas :    " + getZZAnumber
         + "<br>" + "Total Price :  " + calculateTotalPrice
-        + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+        + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');*/
+
+
     });
 
     /* */

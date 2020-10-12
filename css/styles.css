@@ -72,6 +72,8 @@
     padding: 60px;
 }
 
+.deliver,
+.pick,
 .ZZAcheckout {
     text-align: center;
     border-radius: 20px;
@@ -80,25 +82,30 @@
 }
 
 /**/
-.social-list__link:hover {
-    opacity: .7;
-    color: var(--clr-accent);
+.socials {
+   background-color: black; 
 }
 
-.footer__link:hover {
+.img {
+    padding: 20px;
+}
+
+.social__link:hover {
     text-decoration: wavy;
 }
 
+.social__link
 .social-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    display: inline-block; 
     margin: 2em 0 0;
     padding: 2;
 }
 
 .social-list__item {
     margin: 1em;
+    display: inline;
+    justify-content: center;
 }
 
 .social-list__link {

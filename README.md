@@ -23,12 +23,12 @@ A user can:
 10. On checkout the application displays a summary of all the orders he/she has made and the total amount to pay for all his/her orders.
 
 ### Used Technologies
-HTML5
-CSS
-Bootstrap
-Javascript
-jQuery
-Markdown​
+1. HTML5
+2. CSS
+3. Bootstrap
+4. Javascript
+5. jQuery
+6. Markdown​
 
 ### Contact information
 For any further explaination, questions or suggestions, feel free to contact me keza1brenda@gmail.com

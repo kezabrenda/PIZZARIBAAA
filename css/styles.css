@@ -2,27 +2,23 @@
 @import url("./bootstrap.min.css");
 @import url('<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">');
 
-.navbar {
-    background-color: black;
-    color: brown;
+
+#navbar,
+#navLink {
+   text-align: center;
+   color: brown;
+   font-weight: bolder;
+   font-size: larger;
 }
 
-#para{
-    font-family: 'Dancing Script', cursive;
-    font-size: medium;
-    text-align: center;
-}
-#ZZAry {
-    text-align: center;  
-}
 
 .start { 
-    background-image: url("../images/logo.jpeg");
+    background-image: url("../images/Nbg2.jpg");
     text-align: center;
-    background-size: 200px;
     background-position: center center;
-    background-repeat: space;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 100%;
 }
 
 .bienbtn {
@@ -57,11 +53,11 @@
     font-family: 'Glegoo', serif;
 }
 
-.rriba {
-    background-image: url("../images/ZZAsize.jpg");
-    background-repeat: no-repeat;
-    margin-left: 25%;
-    margin-right: 25%;
+.rriba img{
+    width: 1100px;
+    height: 500px;
+    object-fit: cover;
+    padding: 25px 25px;
 }
 /* Form */
 .info,
@@ -75,6 +71,24 @@
     border-radius: 20px;
     padding: 40px;
 }
+
+#para{
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    text-align: center;
+}
+#ZZAry {
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    background-image: url("../images/Nbg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+}
+
 
 .deliver,
 .pickUp,

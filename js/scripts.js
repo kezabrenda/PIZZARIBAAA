@@ -1,21 +1,41 @@
-$(function () {
+$(document).ready(function () {
     $('.ZZAsummary').hide();
     $('.info').hide();
     
-    $("#checkout").click(function(){
+    $("#checkout-form").submit(function(event){
+        event.preventDefault();
 
         function getZZAsizePrice() {
             var choosenSize = document.getElementById("ZZAsize").value;
-            return parseInt(choosenSize);
+            if (choosenSize.option === "Regular @ 1500rwf") {
+                choosenSize = 1500;
+            }
+            else if (choosenSize.option === "Medium @ 2500rwf") {
+                choosenSize = 2500;
+            }
+            else {
+                choosenSize = 3500;
+            }
+            return choosenSize;
         }
         
         function getZZACrustPrice() {
             var choosenCrust = document.getElementById("ZZAcrust").value;
-            return parseInt(choosenCrust);
+            if (choosenCrust.option === "Cheese-Stuffed Crust @ 2000rwf") {
+                    choosenCrust = 2000;
+            }
+            else if (choosenCrust.option === "Gluten-Free Crust @ 1000rwf") {
+                choosenCrust = 1000;
+            }
+            else {
+                choosenCrust = 1500;
+            }
+            return choosenCrust;
         }
+
         function getZZAnumber() {
             var choosenNumber = document.getElementById("ZZAnbr").value;
-            return parseInt(choosenNumber);
+            return choosenNumber;
         }
     
         /* Toppings */
@@ -25,7 +45,7 @@ $(function () {
             if (addTopping1.checked === true) {
                 topping1 = 200;
             }
-            return parseInt(topping1);
+            return topping1;
         }
         function toppingTwo() {
             var topping2 = 0;
@@ -33,7 +53,8 @@ $(function () {
             if (addTopping2.checked === true) {
                 topping2 = 300;
             }
-            return parseInt(topping2);
+            console.log(topping2);
+            return topping2;
         }
         function toppingThree() {
             var topping3 = 0;
@@ -41,7 +62,7 @@ $(function () {
             if (addTopping3.checked === true) {
                 topping3 = 500;
             }
-            return parseInt(topping3);
+            return topping3;
         }
         function toppingFour() {
             var topping4 = 0;
@@ -49,7 +70,7 @@ $(function () {
             if (addTopping4.checked === true) {
                 topping1 = 200;
             }
-            return parseInt(topping4);
+            return topping4;
         }
         function toppingFive() {
             var topping5 = 0;
@@ -57,7 +78,7 @@ $(function () {
             if (addTopping5.checked === true) {
                 topping5 = 1000;
             }
-            return parseInt(topping5);
+            return topping5;
         }
         function toppingSix() {
             var topping6 = 0;
@@ -65,7 +86,7 @@ $(function () {
             if (addTopping6.checked === true) {
                 topping6 = 200;
             }
-            return parseInt(topping6);
+            return topping6;
         }
         function toppingSeven() {
             var topping7 = 0;
@@ -73,7 +94,7 @@ $(function () {
             if (addTopping7.checked === true) {
                 topping7 = 1000;
             }
-            return parseInt(topping7);
+            return topping7;
         }
         function toppingEight() {
             var topping8 = 0;
@@ -81,7 +102,7 @@ $(function () {
             if (addTopping8.checked === true) {
                 topping8 = 1000;
             }
-            return parseInt(topping8);
+            return topping8;
         }
         function toppingNine() {
             var topping9 = 0;
@@ -89,7 +110,7 @@ $(function () {
             if (addTopping9.checked === true) {
                 topping9 = 1500;
             }
-            return parseInt(topping9);
+            return topping9;
         }
         function toppingTen() {
             var topping10 = 0;
@@ -97,7 +118,7 @@ $(function () {
             if (addTopping10.checked === true) {
                 topping10 = 1500;
             }
-            return parseInt(topping10);
+            return topping10;
         }
         function toppingEleven() {
             var topping11 = 0;
@@ -105,7 +126,7 @@ $(function () {
             if (addTopping11.checked === true) {
                 topping11 = 1500;
             }
-            return parseInt(topping11);
+            return topping11;
         }
         function toppingTwelve() {
             var topping12 = 0;
@@ -113,12 +134,12 @@ $(function () {
             if (addTopping12.checked === true) {
                 topping12 = 2000;
             }
-            return parseInt(topping12);
+            return topping12;
         }
     
         function toppings() {
-            var toppingTotal = toppingOne + toppingTwo + toppingThree + toppingFour + toppingFive + toppingSix + toppingSeven + toppingEight + toppingNine + toppingTen + toppingEleven + toppingTwelve;
-            return parseInt(toppingTotal);
+            var toppingTotal = toppingOne() + toppingTwo() + toppingThree() + toppingFour() + toppingFive() + toppingSix() + toppingSeven() + toppingEight() + toppingNine() + toppingTen() + toppingEleven() + toppingTwelve();
+            return toppingTotal;
         }
        /* */
     
@@ -139,14 +160,14 @@ $(function () {
         $('.pickUp').show(2000);
 
         $('#ZZAry').text(" ");
-        $("#ZZAry").append("<br>" + "<p> Pizza Size :  " + getZZAsizePrice
-        + "<br>" + " Pizza Crust :     " + getZZACrustPrice
-        + "<br>" + "Choosen Toppings :     " + toppings
-        + "<br>" + " Number of Pizzas :    " + getZZAnumber
-        + "<br>" + "Total Price :  " + calculateTotalPrice
+        $("#ZZAry").append("<br>" + "<p> Pizza Size :  " + getZZAsizePrice()
+        + "<br>" + " Pizza Crust :     " + getZZACrustPrice()
+        + "<br>" + "Choosen Toppings :     " + toppings()
+        + "<br>" + " Number of Pizzas :    " + getZZAnumber()
+        + "<br>" + "Total Price :  " + calculateTotalPrice()
         + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
 
-   });     
+    });   
     
     /* */
     $('#deliver').click (function Delivery() {
@@ -154,7 +175,7 @@ $(function () {
         this.location = location;
     }
     function view(){
-        dPrice = calculateTotalPrice * 0.2;
+        dPrice = calculateTotalPrice() * 0.2;
         return this.location + " for the delivery price of " + dPrice;
     }
     Delivery.prototype.view = view;
@@ -163,4 +184,5 @@ $(function () {
     });
     /* */
 
+     
 });

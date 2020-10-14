@@ -8,10 +8,14 @@
 }
 
 #para{
-    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: medium;
     text-align: center;
 }
+#ZZAry {
+    text-align: center;  
+}
+
 .start { 
     background-image: url("../images/logo.jpeg");
     text-align: center;

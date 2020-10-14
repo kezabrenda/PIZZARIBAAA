@@ -138,7 +138,6 @@ $(function () {
         $('.deliver').show(2000);
         $('.pickUp').show(2000);
 
-
         $('#ZZAry').text(" ");
         $("#ZZAry").append("<br>" + "<p> Pizza Size :  " + getZZAsizePrice
         + "<br>" + " Pizza Crust :     " + getZZACrustPrice
@@ -147,10 +146,10 @@ $(function () {
         + "<br>" + "Total Price :  " + calculateTotalPrice
         + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
 
-        
-    });
-
+   });     
+    
     /* */
+    $('#deliver').click (function Delivery() {
     function Delivery(location,) {
         this.location = location;
     }
@@ -160,7 +159,8 @@ $(function () {
     }
     Delivery.prototype.view = view;
     var deliver1 = prompt("please enter your location","");
-    document.getElementById("deli").innerHTML = alert(deliver1.view);
+    document.getElementById("deli").innerHTML = alert(deliver1.view);  
+    });
     /* */
 
 });

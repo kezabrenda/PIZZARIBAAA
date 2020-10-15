@@ -7,37 +7,36 @@ $(document).ready(function () {
 
         function getZZAsizePrice() {
             var choosenSize = document.getElementById("ZZAsize").value;
-            if (choosenSize.option === "Regular @ 1500rwf") {
-                choosenSize = 1500;
+            var priceSize = 0;
+            if (choosenSize == "1") {
+                priceSize = 1500;
             }
-            else if (choosenSize.option === "Medium @ 2500rwf") {
-                choosenSize = 2500;
+            else if (choosenSize == "2") {
+                priceSize = 2500;
             }
             else {
-                choosenSize = 3500;
+                priceSize = 3500;
             }
-            return choosenSize;
+            return priceSize;
         }
         
         function getZZACrustPrice() {
             var choosenCrust = document.getElementById("ZZAcrust").value;
-            if (choosenCrust.option === "Cheese-Stuffed Crust @ 2000rwf") {
-                    choosenCrust = 2000;
+            var priceCrust = 0;
+            if (choosenCrust == "1") {
+                    priceCrust = 2000;
             }
-            else if (choosenCrust.option === "Gluten-Free Crust @ 1000rwf") {
-                choosenCrust = 1000;
+            else if (choosenCrust == "2") {
+                priceCrust = 1000;
             }
             else {
-                choosenCrust = 1500;
+                priceCrust = 1500;
             }
-            return choosenCrust;
+            return priceCrust;
         }
 
         function getZZAnumber() {
             var choosenNumber = document.getElementById("ZZAnbr").value;
-            if (choosenNumber.option === false) {
-                choosenNumber = 1;
-            }
             return choosenNumber;
         }
     
@@ -56,7 +55,6 @@ $(document).ready(function () {
             if (addTopping2.checked ===true) {
                 topping2 = 300;
             }
-            console.log(topping2);
             return topping2;
         }
         function toppingThree() {
@@ -130,6 +128,7 @@ $(document).ready(function () {
         }
         function calculateTotalPrice() {
             var totalZZAPrice = (getZZAsizePrice() + getZZACrustPrice() + toppings()) * (getZZAnumber());
+            console.log(getZZAnumber());
             return totalZZAPrice;
         }
 
@@ -173,7 +172,6 @@ $(document).ready(function (){
 
 $("#pickUp").submit(function(event) {
     event.preventDefault();
-    console.log(totalZZAPrice);
     alert("Your order of " + getZZAnumber() + " pizzas has been received.Your total payable amount is " + totalZZAPrice);
 });
 

@@ -14,7 +14,7 @@
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="start" id="start">
             
             <div class="navbar">
@@ -55,6 +55,8 @@
             <img src="./animation/gif1.webp" alt="">
             <img src="./animation/gif1.webp" alt="">
             <img src="./animation/gif1.webp" alt="">
+            <img src="./animation/gif1.webp" alt="">
+            <img src="./animation/gif1.webp" alt="">
         </div>
 
         <br> <br> <br><br><br><br><br><br>
@@ -81,7 +83,9 @@
             </div>
         </div>
 
-        <div class="gif2">
+        <div class="gif2-fluid">
+            <img src="./animation/gif2.webp" alt="">
+            <img src="./animation/gif2.webp" alt="">
             <img src="./animation/gif2.webp" alt="">
             <img src="./animation/gif2.webp" alt="">
             <img src="./animation/gif2.webp" alt="">
@@ -101,18 +105,18 @@
                 <div class="form-group">
                   <label for="ZZAsize">Choose the size of your pizza</label>
                   <select class="form-control" id="ZZAsize">
-                    <option>Regular @ 1500rwf</option>
-                    <option>Medium @ 2500rwf</option>
-                    <option>Large @ 3500rwf</option>
+                    <option value="1">Regular @ 1500rwf</option>
+                    <option value="2">Medium @ 2500rwf</option>
+                    <option value="3">Large @ 3500rwf</option>
                   </select>
                 </div><br>
 
                 <div class="form-group">
                     <label for="ZZAcrust">Choose the type of crust for your pizza</label>
                     <select class="form-control" id="ZZAcrust">
-                      <option>Cheese-Stuffed Crust @ 2000rwf</option>
-                      <option>Gluten-Free Crust @ 1000rwf</option>
-                      <option>Crispy Crust @ 1500rwf</option>
+                      <option value="1">Cheese-Stuffed Crust @ 2000rwf</option>
+                      <option value="2">Gluten-Free Crust @ 1000rwf</option>
+                      <option value="3">Crispy Crust @ 1500rwf</option>
                     </select>
                 </div><br>
 
@@ -178,7 +182,7 @@
 
                 <div class="form-group">
                     <label for="ZZAnbr">Enter number of pizza desired</label>
-                    <textarea class="form-control" id="ZZAnbr" rows="1"></textarea>
+                    <input class="form-control" id="ZZAnbr" rows="1" value="1"/>
                 </div><br>
 
                 <button type="submit" class="ZZAcheckout" id="checkout">checkout</button>
@@ -211,7 +215,7 @@
                           <p id="deli"></p>
                         <img src="./images/speedy.png" class="img">  
                         <button onclick="" class="pickUp">Pick Up</button> 
-                        <img src="./images/speedy2.png" alt="pointPickUp" id="speedy2">
+                        <img src="images/speedy2.png" alt="pointPickUp" id="speedy2">
                     </div>
                 </form>
                 

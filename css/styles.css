@@ -21,6 +21,23 @@
     height: 100%;
 }
 
+/*.scnd {
+    width: 30%;
+    image-resolution: 300dpi;
+    padding-right: 30%;
+}*/
+
+.gif2 {
+    border-image-repeat: repeat;
+    padding-left: 5%;
+    background-color: black;
+}
+.gif1 {
+    border-image-repeat: repeat;
+    padding-left: 5%;
+}
+
+.orderbutton,
 .bienbtn {
     margin-bottom: 100%;
 }
@@ -106,8 +123,8 @@
     border-radius: 20px;
     padding: 10px;
     background-color: teal;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 #speedy2 {
     float: right;

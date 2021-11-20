@@ -3,7 +3,7 @@ This is a website about a pizza place that allows users to order their own custo
 SEE LIVE SITE(https://kezabrenda.github.io/PIZZARIBAAA/)
 
 ## DESCRIPTION
-This is a webpage for DELANI STUDIO which shows who they are, what they do, the services they provide, some of their already done work and a contact form to get in touch with them.
+This is a webpage for a pizza place which shows what they do, the types of pizza they provide, some of their extra toppings and crusts done and a contact form for home delivery or takeout.
 
 ## AUTHOR
 Brenda UMUTONIWASE KEZA

@@ -1,0 +1,24 @@
+{
+  "name": "PIZZARIBAAA",
+  "version": "1.0.0",
+  "description": "This is a website about a pizza place that allows users to order their own custom pizzas. SEE LIVE SITE(https://kezabrenda.github.io/PIZZARIBAAA/)",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-tailwindcss": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kezabrenda/PIZZARIBAAA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kezabrenda/PIZZARIBAAA/issues"
+  },
+  "homepage": "https://github.com/kezabrenda/PIZZARIBAAA#readme"
+}

@@ -39,7 +39,8 @@ $(document).ready(function () {
             var choosenNumber = document.getElementById("ZZAnbr").value;
             return choosenNumber;
         }
-    
+
+        
         /* Toppings */
         function toppingOne() {
             var topping1 = 0;
@@ -69,7 +70,7 @@ $(document).ready(function () {
             var topping4 = 0;
             var addTopping4 = document.getElementById("topping4");
             if (addTopping4.checked === true) {
-                topping1 = 200;
+                topping4 = 1000;
             }
             return topping4;
         }
@@ -85,7 +86,7 @@ $(document).ready(function () {
             var topping6 = 0;
             var addTopping6 = document.getElementById("topping6");
             if (addTopping6.checked === true) {
-                topping6 = 200;
+                topping6 = 1000;
             }
             return topping6;
         }
@@ -93,7 +94,7 @@ $(document).ready(function () {
             var topping7 = 0;
             var addTopping7 = document.getElementById("topping7");
             if (addTopping7.checked === true) {
-                topping7 = 1000;
+                topping7 = 1500;
             }
             return topping7;
         }
@@ -101,7 +102,7 @@ $(document).ready(function () {
             var topping8 = 0;
             var addTopping8 = document.getElementById("topping8");
             if (addTopping8.checked === true) {
-                topping8 = 1000;
+                topping8 = 1500;
             }
             return topping8;
         }
@@ -117,7 +118,7 @@ $(document).ready(function () {
             var topping10 = 0;
             var addTopping10 = document.getElementById("topping10");
             if (addTopping10.checked === true) {
-                topping10 = 1500;
+                topping10 = 2000;
             }
             return topping10;
         }
@@ -128,10 +129,10 @@ $(document).ready(function () {
         }
         function calculateTotalPrice() {
             var totalZZAPrice = (getZZAsizePrice() + getZZACrustPrice() + toppings()) * (getZZAnumber());
-            console.log(getZZAnumber());
             return totalZZAPrice;
         }
 
+        console.log(toppings())
 
         /* */
         $('.ZZAsummary').slideDown(2000);
@@ -153,11 +154,12 @@ $(document).ready(function () {
     
     /* */
 $(document).ready(function (){
-    $('#deliver').submit (function(event) {
+    $('.deliver').submit (function(event) {
         event.preventDefault();
 
         function Delivery(location) {
             this.location = location;
+            console.log("clicked")
     }
     function view(){
         dPrice = calculateTotalPrice() * 0.2;
@@ -168,6 +170,7 @@ $(document).ready(function (){
     document.getElementById("deli").innerHTML = alert(deliver1.view);  
     });
     /* */
+
 });
 
 $("#pickUp").submit(function(event) {

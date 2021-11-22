@@ -24,7 +24,7 @@ A user can:
 
 ### Used Technologies
 1. HTML5
-2. CSS
+2. CSS3(currently using TailwindCSS)
 3. Bootstrap
 4. Javascript
 5. jQuery
